@@ -13,10 +13,22 @@ import java.util.*;
 public class Llamada {
     private Date fecha;
     private Date hora;
-    Persona persona= new Persona();
+    Persona persona ;
     Recurso nuevoRecurso=new Recurso();
     Nivel nivelGravedad= new Nivel();
     ArrayList<Sintoma> sintoma= new ArrayList<Sintoma>();
+    private ArrayList<Object> listadeLLamadas;
+    
+    public Llamada(){
+        
+    }
+    public void agregarPersona(int dni, String nombre, String apellido,String domicilio, String telefono){
+        persona=new Persona(dni,nombre,apellido,domicilio,telefono);
+        
+    }
+    public void agregarLlamada(){
+        
+    }
     
     
 }
