@@ -13,12 +13,25 @@ public class Sintoma {
     private String nombre;
     ArrayList<String> sintomas;
     
-    public Sintoma(){
+    public Sintoma(String nombre){
         sintomas= new ArrayList<String>();
         
     }
-    public void GenerarSintoma(){
+    public void agregarSintoma(){
         sintomas.add(nombre);
-        
+    }
+    public void generarSintoma(){
+        sintomas.add("Fiebre");
+        sintomas.add("Tos seca");
+        sintomas.add("Fatiga");
+        sintomas.add("Disnea");
+        sintomas.add("Flema");
+        sintomas.add("Dolor muscular o en las articulaciones");
+        sintomas.add("Dolor de garganta");
+        sintomas.add("Dolor de cabeza");
+        sintomas.add("Escalofrios");
+        sintomas.add("Nauseas o Vomitos");
+        sintomas.add("Congestion nasal");
+        sintomas.add("Dificultas para respirar");
     }
 }
